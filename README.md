@@ -1,38 +1,34 @@
 # SampleApp
 # Android Project Structure
 
-
-
-[![API](https://img.shields.io/badge/API-14%2B-yellow.svg?style=flat)](https://android-arsenal.com/api?level=14)
-
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 
 This a Sample Project Structure for Android which you can follow for a clean architecture.
 
-It shows usage of following libraries
+It shows usage of following libraries:
 
-API call sample through Retrofit2 and RX java.
+* [Retrofit2] (https://square.github.io/retrofit/) for REST API.
 
-Here i used dagger for dependency injection.
+* [RX java] (https://github.com/ReactiveX/RxJava) for background process and Retrofit integration.
 
-Firebase added for notifications.
+* [Dagger2] (https://google.github.io/dagger/) for dependency injection.
 
-Calligraphy for settings fonts.
+* [Firebase] (https://firebase.google.com/) for push notifications.
 
-Picasso for image loading. You can use here glide also.
+* [Calligraphy] (https://github.com/chrisjenx/Calligraphy) for font.
 
-Komensky for validations.
+* [Picasso] (http://square.github.io/picasso/) for image loading.
 
-Fabric for crashlytics.
+* [Komensky] (https://github.com/inmite/android-validation-komensky) validations for annotation based validations.
 
-Butterknife for declaring our controls.
+* [Fabric] (https://get.fabric.io/#) for crashlytics.
 
-MVP (Model View Presenter) pattern is a derivative from the well known MVC (Model View Controller), which for a while now is gaining importance in the development of Android applications.
+* [Butterknife] (http://jakewharton.github.io/butterknife/) for view binding.
 
-Location Handling by fused api.
+* [Timber] (https://github.com/JakeWharton/timber) for logging.
 
-Utility classes.
+It uses MVP (Model View Presenter) pattern. MVP is a derivative from the well known MVC (Model View Controller), which for a while now is gaining importance in the development of Android applications.This project also contains basic utility classes required for day to day programming.
 
 
 # Here is what the app gradle look likes.
@@ -115,11 +111,11 @@ Utility classes.
     }
 	
     }
-apply plugin: 'com.google.gms.google-services'
+    apply plugin: 'com.google.gms.google-services'
 
 #Start from
 
-minSdkVersion 14
+minSdkVersion 16
 
 #LICENSE
 
@@ -130,4 +126,4 @@ http://www.apache.org/licenses/LICENSE-2.0
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 #Author
-Softprodigy
+Anirudh
